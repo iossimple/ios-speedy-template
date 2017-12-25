@@ -9,9 +9,9 @@ Build an iOS speedy template. Things to care:
 * UI layer
 
 Progress:
-* Authentication
-* Feed View (UI + Fetch Networking + Display Logic)
+* Feed (UI + Fetch Networking + Display Logic)
 * Cache (Feed data)
+* Authentication
 * Detail View (UI + Reload Logic + Cache Logic + Navigation)
 * Update Logic (UI + Verification Logic + PUT Logic)
 
