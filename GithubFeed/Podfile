@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GithubFeed' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GithubFeed
+  pod 'RxSwift',      '~> 4.0' # do reactive programming
+  pod 'RxCocoa',      '~> 4.0' # do RxSwift with Cocoa Touch
+  pod 'R.swift',      '~> 4.0' # get strong typed, autocompleted resources for images, fonts, segues, texts, colors, nibs, cells
+  pod 'Kingfisher',   '~> 4.0' # download and cache images
+end
