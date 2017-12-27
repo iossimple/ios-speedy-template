@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651817161FF347E40051B726 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651817151FF347E40051B726 /* R.generated.swift */; };
 		6575E8431FF1119A0004E7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575E8421FF1119A0004E7C9 /* AppDelegate.swift */; };
 		6575E8451FF1119A0004E7C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575E8441FF1119A0004E7C9 /* ViewController.swift */; };
 		6575E8481FF1119A0004E7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575E8461FF1119A0004E7C9 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3AB3532EE703E73A94A9ACC7 /* Pods_GithubFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		651817151FF347E40051B726 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		6575E83F1FF1119A0004E7C9 /* GithubFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6575E8421FF1119A0004E7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6575E8441FF1119A0004E7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		6575E8361FF111990004E7C9 = {
 			isa = PBXGroup;
 			children = (
+				651817151FF347E40051B726 /* R.generated.swift */,
 				6575E8411FF1119A0004E7C9 /* GithubFeed */,
 				6575E8401FF1119A0004E7C9 /* Products */,
 				17160108CEF3AB77D59BC4A2 /* Pods */,
@@ -96,6 +99,7 @@
 			buildConfigurationList = 6575E8511FF1119A0004E7C9 /* Build configuration list for PBXNativeTarget "GithubFeed" */;
 			buildPhases = (
 				DCD5394B1D3A25EA8AF9167E /* [CP] Check Pods Manifest.lock */,
+				651817141FF347260051B726 /* ShellScript */,
 				6575E83B1FF1119A0004E7C9 /* Sources */,
 				6575E83C1FF1119A0004E7C9 /* Frameworks */,
 				6575E83D1FF1119A0004E7C9 /* Resources */,
@@ -183,6 +187,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubFeed/Pods-GithubFeed-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		651817141FF347260051B726 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		DCD5394B1D3A25EA8AF9167E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +242,7 @@
 			files = (
 				6575E8451FF1119A0004E7C9 /* ViewController.swift in Sources */,
 				6575E8431FF1119A0004E7C9 /* AppDelegate.swift in Sources */,
+				651817161FF347E40051B726 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
