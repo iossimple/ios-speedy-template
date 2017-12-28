@@ -36,13 +36,24 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `RepoCell`.
+    static let repoCell = _R.nib._RepoCell()
+    
+    /// `UINib(name: "RepoCell", in: bundle)`
+    static func repoCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.repoCell)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 0 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
+    /// Reuse identifier `RepoCell`.
+    static let repoCell: Rswift.ReuseIdentifier<RepoCell> = Rswift.ReuseIdentifier(identifier: "RepoCell")
+    
     fileprivate init() {}
   }
   
@@ -91,6 +102,20 @@ struct R: Rswift.Validatable {
 
 struct _R {
   struct nib {
+    struct _RepoCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = RepoCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "RepoCell"
+      let name = "RepoCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> RepoCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? RepoCell
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -105,7 +130,7 @@ struct _R {
     }
     
     struct main: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
       let name = "Main"

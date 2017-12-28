@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		651817161FF347E40051B726 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651817151FF347E40051B726 /* R.generated.swift */; };
+		6518171A1FF362320051B726 /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651817191FF362320051B726 /* HomeFeedViewController.swift */; };
+		651817201FF376910051B726 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518171F1FF376910051B726 /* FeedViewModel.swift */; };
+		651817231FF377990051B726 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651817211FF377990051B726 /* RepoCell.swift */; };
+		651817241FF377990051B726 /* RepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651817221FF377990051B726 /* RepoCell.xib */; };
 		6575E8431FF1119A0004E7C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575E8421FF1119A0004E7C9 /* AppDelegate.swift */; };
-		6575E8451FF1119A0004E7C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575E8441FF1119A0004E7C9 /* ViewController.swift */; };
 		6575E8481FF1119A0004E7C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575E8461FF1119A0004E7C9 /* Main.storyboard */; };
 		6575E84A1FF1119A0004E7C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6575E8491FF1119A0004E7C9 /* Assets.xcassets */; };
 		6575E84D1FF1119A0004E7C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6575E84B1FF1119A0004E7C9 /* LaunchScreen.storyboard */; };
@@ -19,9 +22,12 @@
 /* Begin PBXFileReference section */
 		3AB3532EE703E73A94A9ACC7 /* Pods_GithubFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		651817151FF347E40051B726 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		651817191FF362320051B726 /* HomeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
+		6518171F1FF376910051B726 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		651817211FF377990051B726 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		651817221FF377990051B726 /* RepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCell.xib; sourceTree = "<group>"; };
 		6575E83F1FF1119A0004E7C9 /* GithubFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6575E8421FF1119A0004E7C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6575E8441FF1119A0004E7C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6575E8471FF1119A0004E7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6575E8491FF1119A0004E7C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6575E84C1FF1119A0004E7C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		651817251FF3B2CD0051B726 /* Common Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Common Classes";
+			sourceTree = "<group>";
+		};
+		651817261FF3B2DD0051B726 /* Data Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Entities";
+			sourceTree = "<group>";
+		};
+		651817271FF3B2E40051B726 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		651817281FF3B4F00051B726 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		651817291FF3B53E0051B726 /* Github API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Github API";
+			sourceTree = "<group>";
+		};
 		6575E8361FF111990004E7C9 = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +114,20 @@
 		6575E8411FF1119A0004E7C9 /* GithubFeed */ = {
 			isa = PBXGroup;
 			children = (
+				651817291FF3B53E0051B726 /* Github API */,
+				651817281FF3B4F00051B726 /* View Controllers */,
+				651817271FF3B2E40051B726 /* View Models */,
+				651817261FF3B2DD0051B726 /* Data Entities */,
+				651817251FF3B2CD0051B726 /* Common Classes */,
 				6575E8421FF1119A0004E7C9 /* AppDelegate.swift */,
-				6575E8441FF1119A0004E7C9 /* ViewController.swift */,
 				6575E8461FF1119A0004E7C9 /* Main.storyboard */,
 				6575E8491FF1119A0004E7C9 /* Assets.xcassets */,
 				6575E84B1FF1119A0004E7C9 /* LaunchScreen.storyboard */,
 				6575E84E1FF1119A0004E7C9 /* Info.plist */,
+				6518171F1FF376910051B726 /* FeedViewModel.swift */,
+				651817191FF362320051B726 /* HomeFeedViewController.swift */,
+				651817211FF377990051B726 /* RepoCell.swift */,
+				651817221FF377990051B726 /* RepoCell.xib */,
 			);
 			path = GithubFeed;
 			sourceTree = "<group>";
@@ -157,6 +206,7 @@
 				6575E84D1FF1119A0004E7C9 /* LaunchScreen.storyboard in Resources */,
 				6575E84A1FF1119A0004E7C9 /* Assets.xcassets in Resources */,
 				6575E8481FF1119A0004E7C9 /* Main.storyboard in Resources */,
+				651817241FF377990051B726 /* RepoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6575E8451FF1119A0004E7C9 /* ViewController.swift in Sources */,
+				651817231FF377990051B726 /* RepoCell.swift in Sources */,
+				651817201FF376910051B726 /* FeedViewModel.swift in Sources */,
 				6575E8431FF1119A0004E7C9 /* AppDelegate.swift in Sources */,
 				651817161FF347E40051B726 /* R.generated.swift in Sources */,
+				6518171A1FF362320051B726 /* HomeFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
